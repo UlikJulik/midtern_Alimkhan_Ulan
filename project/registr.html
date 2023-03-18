@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/login_style.css">
+    <script src="js.js"></script>
+    <script src="login.js"></script>
+
+</head>
+<body>
+    <div class="burger" style="padding: 5px;">
+        <aside><button class="home" style="margin-top: 5px; float: left; font-size: 30px; border: 0; background-color: #56af56;"><a href="index.html">Главное меню</a></button></aside>
+        <aside class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button class="drop" id="home"><a href="index.html">Главное</a></button>
+                <button class="drop" id="regis"><a href="registr.html">Регистрация</a></button>
+                <button class="drop" id="loggin"><a href="login.html">Авторизация</a></button>
+                <button class="drop" id="about_us"><a href="profile.html">О нас</a></button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="house2 forma" style="height: 600px;">
+        <form action="" >
+            <h2 style="text-align: center;">Регистрация</h2>
+
+            <div class="top">
+                <a class="link"  href="login.html">Вход</a>
+                <a class="link" style="background-color: black; color: white;" href="registr.html">Регистрация</a>
+        
+            </div>
+            <div class="post">
+                <input class="email" type="text" placeholder="Firstname">
+
+                <input class="email" type="text" placeholder="Name">
+
+                <input class="email" type="text" placeholder="E-mail">
+            
+                <input class="email" type="password" placeholder="Password">
+            
+                <input type="checkbox">Don't forgot
+            
+                
+                <input class="input" type="submit" value="Регистрация">
+            </div>  
+        </form>
+    </div>
+</body>
+</html>

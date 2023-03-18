@@ -1,0 +1,79 @@
+.burger{
+    background-color: #56af56;
+    margin: 5px 20px 0 20px;
+    width: 97%;
+    height: 45px;
+}
+.house{
+    width: 97%;
+    margin: 10px 20px 10px 20px;
+    border: 7px solid #f9d629;
+}
+.house_img{
+    border: 1px solid #444242;
+    width: 30%;
+    height: 150px;
+    margin: 10px 10px 10px 15px;
+    float: left;
+}
+.house_inf{
+    width: 98%;
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    color: white;
+}
+/* Цвет кнопки  при наведений, при нажатий, в обычном состояний*/
+button:hover{
+    color: #3333f6;
+}
+button:active{
+    color: #1471fc;
+}
+button:link{
+    color: #3333f6;
+}
+
+.drop{
+    background-color: #0e8bff;
+    border: 1px solid black;    
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: #56af56;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropdown {
+    float: right;
+}
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #56af56;
+    z-index: 1;
+}
+  
+  /* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #56af56}
+  
+  /* Показать выпадающее меню*/
+.show {display:block;}

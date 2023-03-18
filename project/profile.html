@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creators</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="js.js"></script>
+    <script src="login.js"></script>
+
+    <style>
+        #inf{
+            width: 98%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 0;
+        }
+        #lor{
+            background-color: #ffffff;
+            border: 5px solid #f4c611;
+            padding: 10px;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 30%;
+            height: 400px;
+            border: 3px solid #37a91b;
+            perspective: 1000px;
+            float: left;
+            align-items: center;
+            margin-left: 12%;
+        }
+
+        /* Этот контейнер необходим для того чтобы расположить переднюю и заднюю сторону */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Горизонтальный флип, когда мышь перемещается над контейнером флип-бокса */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Расположение передней и задней стороны */
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        /* Стиль лицевой стороны (запасной вариант, если изображение отсутствует) */
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Стиль задней стороны */
+        .flip-card-back {
+            background-color: #37a91b;
+            color: #363232;
+            transform: rotateY(180deg);
+        }
+
+        /* Вид иконкок */
+        .inst_icon{
+            border-radius: 7px;
+            border: 0;
+            width: 30px;
+            height: 30px;
+        }
+        .phone_icon{
+            width: 30px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body style="background-color: #f1f1f1;">
+    <div class="burger" style="padding: 5px;">
+        <aside><button class="home" style="margin-top: 5px; float: left; font-size: 30px; border: 0; background-color: #56af56;"><a href="index.html">Главное меню</a></button></aside>
+        <aside class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button class="drop" id="home"><a href="index.html">Главное</a></button>
+                <button class="drop" id="regis"><a href="registr.html">Регистрация</a></button>
+                <button class="drop" id="loggin"><a href="login.html">Авторизация</a></button>
+                <button class="drop" id="about_us"><a href="profile.html">О нас</a></button>
+            </div>
+        </aside>
+    </div>
+
+    <div id="inf">
+        <div class="Lorem" id="lor" style="font-size: 22px; text-align: center;  margin: auto; margin-bottom: 50px; width: 80%;">    </div>
+        <div></div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/person1.jpg" alt="Аватар" style="width:100%;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Ортаев Бек Сакенович</h1>
+                <div class="Lorem">
+                </div>
+                <a href="https://www.instagram.com/_ortayev/"><img src="./images/inst.jpg" class="inst_icon" id="1_inst"></a>
+                <a><img src="./images/phone.png" class="phone_icon" id="1_phone"/></a>
+              </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/person2.jpg" alt="Аватар" style="width:100%;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Әбіласан Нұрсәулет Нұрланұлы</h1>
+                <div class="Lorem"></div>
+                <a href="https://www.instagram.com/nursaaulet/"><img src="./images/inst.jpg" class="inst_icon" id="2_inst"/></a>
+                <a><img src="./images/phone.png" class="phone_icon" id="2_phone"/></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var custom = document.getElementsByClassName('Lorem')
+    var text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    custom[0].innerHTML = text;
+    custom[1].innerHTML = text;
+    custom[2].innerHTML = text;
+    </script>
